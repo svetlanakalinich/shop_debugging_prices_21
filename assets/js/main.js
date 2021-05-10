@@ -8,8 +8,6 @@ let btnClickHandler = (e) => {
   const target = e.target;
   let restoreHtML;
 
-
-
   if (target && target.matches('.item-actions__cart')) {
     cartCounterLabel.innerHTML = `${++cartCounter}`;
     if (cartCounter === 1) cartCounterLabel.style.display = 'block';
@@ -34,8 +32,5 @@ let btnClickHandler = (e) => {
     }, 2000);
   }
 };
-
-
-
 
 buttonsContainer.addEventListener('click', btnClickHandler);
